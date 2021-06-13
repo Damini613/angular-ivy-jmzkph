@@ -27,14 +27,17 @@ export class AppComponent {
 
   data = ['anil', 'peter', 'ram'];
 
+
   data2 = [
-    {
-      name: 'anil',
-      age: 29
-    },
-    {
-      name: 'poli',
-      age : 30
-    }
-  ];
+{
+  name : 'peter',
+  age : 45,
+  email :'amg@test.com'
+},{
+  name : 'rakesh',
+  age : 67,
+ 
+}
+
+  ]
 }

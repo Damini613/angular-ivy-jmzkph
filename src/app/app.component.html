@@ -10,11 +10,11 @@ Branch <br /><input type="text" #branch /> <br />
 </button>
 
 <!--
-  if else -->
+  if else 
 <ng-template [ngif]="show =='red'">
   <h1>show red</h1>
 </ng-template>
-
+-->
 <!--
   <button (click)="min()">Check Result</button>
   <h1 *ngIf="min else elseblock">if block</h1>
@@ -42,5 +42,26 @@ Branch <br /><input type="text" #branch /> <br />
 </h4>
 
 <h4 *ngFor="let item1 of data2">
-  {{item1.name}}
+  {{item1.name}} {{item1.age}}
 </h4>
+
+<!-- we can use table  --->
+
+<table border="1">
+  <tr>
+    <td>
+      Name
+    </td>
+    <td>
+      Age
+    </td>
+    <td>
+      Email
+    </td>
+  </tr>
+  <tr *ngFor="let item of data2">
+    <td>{{item.name}}</td>
+    <td>{{item.age}}</td>
+    <td>{{item.emails}}</td>
+  </tr>
+</table>
