@@ -16,4 +16,8 @@ export class AppComponent {
     this.branch = branch;
     alert('Your response has been submitted successfully');
   }
+
+  showDetails(){
+    document.write(this.name)
+  }
 }
