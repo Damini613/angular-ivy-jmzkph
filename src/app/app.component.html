@@ -1,12 +1,5 @@
 <div></div>
 <body>
-  <img
-    src="https://www.insbright.com/wp-content/uploads/3205/keep-calm-and-study-hard.jpg"
-    alt="study img"
-    height="400"
-    width="500"
-  />
-
   <br />
   <h1>Registration Form</h1>
   Name <br /><input type="text" #name /> <br />
@@ -17,4 +10,12 @@
   <button (click)="submitDetails(name.value,college.value,branch.value)">
     Submit
   </button>
+
+  <br /><br />
+
+  <button (click)="min()">Check Result</button>
+  <h1 *ngIf="min else elseblock">if block</h1>
+  <ng-template #elseblock>
+    <h1>else block</h1>
+  </ng-template>
 </body>

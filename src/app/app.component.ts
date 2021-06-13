@@ -17,7 +17,15 @@ export class AppComponent {
     alert('Your response has been submitted successfully');
   }
 
-  showDetails(){
-    document.write(this.name)
+  showDetails() {
+    document.write(this.name);
   }
+
+  min(){
+    if(9>0)
+    return  true
+    else
+    return false
+  }
+  show = false;
 }
