@@ -1,23 +1,20 @@
-<div></div>
-<body>
-  <br />
-  <h1>Registration Form</h1>
-  Name <br /><input type="text" #name /> <br />
-  College <br />
-  <input type="text" #college /> <br />
-  Branch <br /><input type="text" #branch /> <br />
-  <br />
-  <button (click)="submitDetails(name.value,college.value,branch.value)">
-    Submit
-  </button>
+<h2>Registration Form</h2>
+Name <br /><input type="text" #name /> <br />
+College <br />
+<input type="text" #college /> <br />
+Branch <br /><input type="text" #branch /> <br />
+<br />
+<button (click)="submitDetails(name.value,college.value,branch.value)">
+  Submit
+</button>
 
-  <br /><br />
+<br /><br />
 
-  <!--
+<!--
   <button (click)="min()">Check Result</button>
   <h1 *ngIf="min else elseblock">if block</h1>
   <ng-template #elseblock>
     <h1>else block</h1>
   </ng-template>
 </body>
---></body>
+-->
