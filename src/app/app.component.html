@@ -2,13 +2,18 @@
 Name <br /><input type="text" #name /> <br />
 College <br />
 <input type="text" #college /> <br />
+
 Branch <br /><input type="text" #branch /> <br />
 <br />
 <button (click)="submitDetails(name.value,college.value,branch.value)">
   Submit
 </button>
 
-<br /><br />
+<!--
+  if else -->
+<ng-template [ngif]="show =='red'">
+  <h1>show red</h1>
+</ng-template>
 
 <!--
   <button (click)="min()">Check Result</button>
@@ -18,3 +23,24 @@ Branch <br /><input type="text" #branch /> <br />
   </ng-template>
 </body>
 -->
+
+<!-- switch case  like 12 conditions --jan feb or color based data show-->
+
+<div [ngSwitch]="color">
+  <h2 style="color:red" *ngSwitchCase="'red'">
+    red color
+  </h2>
+  <h2 style="color:yellow" *ngSwitchCase="'yellow'">
+    yellow color
+  </h2>
+</div>
+
+<!--for loop-->
+
+<h4 *ngFor="let item of data">
+  {{item}}
+</h4>
+
+<h4 *ngFor="let item1 of data2">
+  {{item1.name}}
+</h4>

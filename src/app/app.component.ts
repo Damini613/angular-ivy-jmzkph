@@ -21,11 +21,20 @@ export class AppComponent {
     document.write(this.name);
   }
 
-  min(){
-    if(9>0)
-    return  true
-    else
-    return false
-  }
-  show = false;
+  show = 'bbsr';
+
+  color = 'yellow';
+
+  data = ['anil', 'peter', 'ram'];
+
+  data2 = [
+    {
+      name: 'anil',
+      age: 29
+    },
+    {
+      name: 'poli',
+      age : 30
+    }
+  ];
 }
