@@ -1,2 +1,39 @@
 /* Add application styles & imports to this file! */
 
+body {
+  width: 40px;
+  height: 40px;
+  background-color: lightslategray;
+  position: static;
+  animation-name: first;
+  animation-duration: 0s;
+  animation-delay: 2s;
+}
+
+@keyframes first {
+  0% {
+    background-color: skyblue;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: lightcoral;
+    left: 40px;
+    top: 0px;
+  }
+  50% {
+    background-color: lightgoldenrodyellow;
+    left: 40px;
+    top: 40px;
+  }
+  75% {
+    background-color: lightgray;
+    left: 0px;
+    top: 40px;
+  }
+  100% {
+    background-color: lightskyblue;
+    left: 0px;
+    top: 40px;
+  }
+}

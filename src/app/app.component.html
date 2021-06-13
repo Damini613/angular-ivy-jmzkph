@@ -1,11 +1,20 @@
 <div></div>
-<br>
-<h1>Registration Form</h1>
-Name <br><input type="text" #name> <br>
-College <br> <input type="text" #college> <br>
-Branch <br><input type="text" #branch> <br> <br>
-<button (click)="submitDetails(name.value,college.value,branch.value)">Submit</button>
+<body>
+  <img
+    src="https://www.insbright.com/wp-content/uploads/3205/keep-calm-and-study-hard.jpg"
+    alt="study img"
+    height="400"
+    width="500"
+  />
 
-<br> <br>
-<button (click)="showDetails()">View Details</button>
-<!--using binding property or interpolation -->
+  <br />
+  <h1>Registration Form</h1>
+  Name <br /><input type="text" #name /> <br />
+  College <br />
+  <input type="text" #college /> <br />
+  Branch <br /><input type="text" #branch /> <br />
+  <br />
+  <button (click)="submitDetails(name.value,college.value,branch.value)">
+    Submit
+  </button>
+</body>
