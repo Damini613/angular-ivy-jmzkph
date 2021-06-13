@@ -1,0 +1,37 @@
+div {
+  width: 40px;
+  height: 40px;
+  background-color: rebeccapurple;
+  position: relative;
+  animation-name: first;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes first {
+  0% {
+    background-color: blue;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: orange;
+    left: 40px;
+    top: 0px;
+  }
+  50% {
+    background-color: red;
+    left: 40px;
+    top: 40px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 40px;
+  }
+  100% {
+    background-color: blue;
+    left: 0px;
+    top: 0px;
+  }
+}
